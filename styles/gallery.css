@@ -3,13 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-.navbar-brand:hover{
+
+.navbar-brand:hover {
   color: #ff8c00;
 }
-.nav-item a:hover{
+.nav-item a:hover {
   font-size: large;
-  color:#ff8c00;
-  
+  color: #ff8c00;
 }
 #hero {
   height: 70vh; /* full screen height (you can use 70vh if you prefer) */
@@ -81,31 +81,146 @@
 .gallery-item:hover .popup-text {
   transform: translateY(0);
 }
-.footer-icons{
+.footer-icons {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   gap: 0;
-  
 }
-.footer-icons i{
+.footer-icons i {
   align-content: space-evenly;
-  padding:0 0 25px 25px;
-
-  
-  
-  
+  padding: 0 0 25px 25px;
 }
-.footer hr{
+.footer hr {
   color: antiquewhite;
   width: 800px;
   max-width: 80%;
   margin: 20px auto;
 }
-.footer-rights{
+.footer-rights {
   display: flex;
   justify-content: center;
   text-align: center;
 }
-.footer-rights p{
+.footer-rights p {
   color: gray;
+}
+/* tablets */
+@media (max-width: 992px) {
+  .gallery-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #hero {
+    min-height: 50vh;
+  }
+
+  #hero h1 {
+    font-size: 45px;
+  }
+
+  #hero p {
+    font-size: 23px;
+  }
+
+  #float h1 {
+    font-size: 40px;
+  }
+
+  .bg-light h2 {
+    font-size: 28px;
+  }
+}
+/* mobile devices */
+
+@media (max-width: 768px) {
+  .gallery-row {
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .gallery-item {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  #hero {
+    min-height: 40vh;
+    padding: 25px 20px;
+  }
+
+  #hero h1 {
+    font-size: 40px;
+  }
+
+  #hero p {
+    font-size: 2opx;
+  }
+
+  #float {
+    min-height: 30vh;
+    padding: 40px 20px;
+  }
+
+  #float h1 {
+    font-size: 28px;
+  }
+
+  .bg-light {
+    padding: 20px 20px;
+  }
+
+  .bg-light h2 {
+    font-size: 25px;
+  }
+
+  .footer-icons i {
+    margin: 0 10px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-section {
+    padding: 20px;
+  }
+
+  .gallery-row {
+    gap: 18px;
+  }
+
+  .gallery-item {
+    aspect-ratio: 16/9;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+  }
+
+  #hero p {
+    font-size: 20px;
+  }
+
+  #float h1 {
+    font-size: 25px;
+  }
+
+  .popup-text {
+    padding: 20px 18px 18px;
+  }
+
+  .popup-text h6 {
+    font-size: 18px;
+  }
+
+  .btn-dark {
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+
+  .footer-icons i {
+    margin: 0 8px;
+    font-size: 20px;
+  }
 }

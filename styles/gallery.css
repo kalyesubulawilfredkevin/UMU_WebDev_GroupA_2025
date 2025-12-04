@@ -105,7 +105,8 @@
 /* tablets */
 @media (max-width: 992px) {
   .gallery-row {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
@@ -133,7 +134,8 @@
 
 @media (max-width: 768px) {
   .gallery-row {
-    flex-direction: column;
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     max-width: 500px;
     margin: 0 auto;
   }

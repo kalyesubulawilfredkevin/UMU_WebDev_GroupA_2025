@@ -11,6 +11,66 @@
   color:#ff8c00;
   
 }
+body{
+    margin-top: 6%;
+    background-image: url('../photos/ocean.avif');
+}
+.about-1{
+    margin: 30;
+    padding: 5px;
+}
+.about-1 h1{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.about-1 p{
+    text-align: center;
+    padding: 4px;
+    color: white;
+}
+.about-item{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 80px,30px;
+}
+.about-item i{
+    font-size: 43px;
+    margin: 0;
+    color: white;
+}
+.about-item h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white;
+}
+.about-item hr{
+    width: 50px;
+    height: 2px;
+    margin: 0 auto;
+    border: nome;
+}
+.about-item p{
+    margin-top: 30px;
+    font-weight: bold;
+    color: white;
+}
+.about-item:hover i, 
+.about-item:hover h3,
+.about-item:hover p{
+    color: white;
+}
+.about-item:hover hr{
+    background-color: blue;
+}
+.about-item:hover i{
+    transform: translateY(-20px);
+}
+.about-item:hover i, 
+.about-item:hover h3,
+.about-item:hover hr{
+    transition: all 400 ease-in-out;
+}
 .footer-icons{
   display: flex;
   justify-content:center;

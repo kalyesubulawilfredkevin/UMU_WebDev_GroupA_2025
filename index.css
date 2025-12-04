@@ -11,6 +11,14 @@
   color:#ff8c00;
   
 }
+#hero {
+    height: 70vh; 
+    background-image: url('./photos/antelope2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
 .footer-icons{
   display: flex;
   justify-content:center;

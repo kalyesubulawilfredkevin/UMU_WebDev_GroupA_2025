@@ -24,97 +24,392 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../styles/blog.css" />
   </head>
-  <body>
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm"
-    >
-      <div class="container">
-        <!-- Brand -->
-        <a class="navbar-brand fw-bold" href="#hero"
-          ><i class="fa-solid fa-earth-americas"></i> The World Travels</a
-        >
+<body>
 
-        <!-- Mobile Toggle Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand fw-bold" href="#hero"><i class="fa-solid fa-earth-americas"></i> The World
+        Travels</a>
 
-        <!-- Menu Items -->
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/aboutus.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/contactus.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/gallery/gallery.html">Gallery</a>
-            </li>
-          </ul>
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/aboutus.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/contactus.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/gallery/gallery.html">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- slides -->
+  <div class="slideshow-container">
+    <div class="mySlides fad">
+      <div class="textBLOG">
+        <h1>TRAVEL BLOG</h1>
+      </div>
+      <img src="../photos/arena.jpg" alt="Slide 1">
+      <div class="text">Colosseum</div>
+    </div>
+
+    <div class="mySlides fad">
+      <div class="textBLOG">
+        <h1>TRAVEL BLOG</h1>
+      </div>
+      <img src="../photos/cheetah2.jpg" alt="Slide 2">
+      <div class="text">African cheetah</div>
+    </div>
+
+    <div class="mySlides fad">
+      <div class="textBLOG">
+        <h1>TRAVEL BLOG</h1>
+      </div>
+      <img src="../photos/bike.jpg" alt="Slide 3">
+      <div class="text">Motor bike races</div>
+    </div>
+
+    <div class="mySlides fad">
+      <div class="textBLOG">
+        <h1>TRAVEL BLOG</h1>
+      </div>
+      <img src="../photos/gall 3.jpeg" alt="Slide 4">
+      <div class="text">Heritage sites</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+  <!-- end slides -->
+  <!--cards -->
+  <div></div>
+  <div class="parent-card d-flex justify-content-around m-3 p-3 fade-in">
+    <div class="card m-2" style="width: 18rem">
+      <img src="../photos/inside the pyramid.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Egyptian pyramids</h5>
+        <p class="card-text">
+          Visit the great pyramids in Egypt with us as we show you the
+          different places.<br />
+        </p>
+        <a href="#culture" class="btn btn-dark">City tours</a>
+      </div>
+    </div>
+
+    <div class="card m-2" style="width: 18rem">
+      <img src="../photos/baloon serengeti tanzania2.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Baloon tours</h5>
+        <p class="card-text">
+          join us as we venture above the grass lands to see the natural features and
+          nature in ggame parks.
+        </p>
+        <a href="#ape" class="btn btn-dark">Wild tours</a>
+      </div>
+    </div>
+    <div class="card m-2" style="width: 18rem">
+      <img src="../photos/boat.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Water Scenaries</h5>
+        <p class="card-text">
+          come visit the great white river and venture with us through the high lands.
+          plans
+        </p>
+        <a href="#water" class="btn btn-dark">water tours</a>
+      </div>
+    </div>
+  </div>
+  <!-- end -->
+
+  <div class="row m-2 ">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static bg-light text-black">
+          <strong class="d-inline-block mb-2 ">World</strong>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">
+            Explore unforgettable destinations, embrace new adventures, and create memories that last a lifetime.
+            Discover the world
+            with us—your journey starts here!
+          </p>
         </div>
       </div>
-    </nav>
-    <!--footer-->
-    <section>
-      <footer>
-        <div class="footer bg-dark">
-          <div class="footer-icons">
-            <div class="p-4">
-              <i
-                class="fa-brands fa-facebook fa-beat-fade fa-lg"
-                style="color: orange"
-              ></i>
-              <i
-                class="fa-brands fa-instagram fa-beat-fade fa-lg"
-                style="color: orange"
-              ></i>
-              <i
-                class="fa-brands fa-youtube fa-beat-fade fa-lg"
-                style="color: orange"
-              ></i>
-              <i
-                class="fa-brands fa-pinterest fa-beat-fade fa-lg"
-                style="color: orange"
-              ></i>
-              <i
-                class="fa-brands fa-email fa-beat-fade fa-lg"
-                style="color: orange"
-              ></i>
-            </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static bg-light text-dark">
+          <strong class="d-inline-block mb-2 ">Culture</strong>
+          <div class="mb-1 text-muted">Nov 11</div>
+          <p class="mb-auto">
+            Discover hidden gems, experience vibrant cultures, and enjoy breathtaking sights. Your next great adventure
+            awaits—let’s
+            make every moment extraordinary!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ev -->
+  <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
+    <div class="col">
+      <div class="card h-100">
+        <img src="../photos/city2.jpg" class="card-img-topp" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Ait Benhaddou</h5>
+          <p class="card-text">
+
+            This is known for being one of the most quiet and family friendly cities of Morocco, but there are also
+            plenty of good
+            things to do there.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 months ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../photos/gall 7.webp " class="card-img-topp" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Golden bridge</h5>
+          <p class="card-text">
+            The pedestian bridge is 150 meters long and sites at an altitude of 1414 meters
+            above the sea level offering panaromic views of the surrounding ladscape.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 weeks ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100" id="ape">
+        <img src="../photos/gall 9.jpg" class="card-img-topp" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Great wall of china</h5>
+          <p class="card-text">
+            The Great Wall of China is a series of fortifications in China. It is a UNESCO World
+            Heritage Site, and was voted one of the New 7 Wonders of the World in 2007
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 cards -->
+  <div class="row row-cols-1 row-cols-md-3 g-4 m-3 " id="ape">
+    <div class="col">
+      <div class="card h-100">
+        <img src="../photos/water buffalo.jpg" class="card-img-topp" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">African buffalo</h5>
+          <p class="card-text">
+            These are the largest african buffalos come tour with us to explore the famous African water buffalo.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 months ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../photos/zebra44.jpg" class="card-img-topp" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">African Zebra</h5>
+          <p class="card-text">
+            Tour with us as we explore and visit the vast lands.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 weeks ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100" id="ape">
+        <img src="../photos/antelope2.jpg" class="card-img-topp" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">African antelope</h5>
+          <p class="card-text">
+            tour with us as we visit the rarest species of african antelopes.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 3 cards end -->
+  <p>
+    <center>
+      <h1 id="culture">CITIES</h1>
+    </center>
+  </p>
+  <p>
+    <center>
+      <h3>Come tour with us the different cities,</h3>
+    </center>
+  </p>
+  <p>
+    <center>
+      <h3>all over the world and differet heritages.</h3>
+    </center>
+  </p>
+  <!-- a-culture -->
+  <div class="row row-cols-1 row-cols-md-3 g-4 m-3">
+    <div class="col">
+      <div class="card h-100">
+        <img src="../photos/gall 12.webp" class="card-img-topp" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Bard Italy</h5>
+          <p class="card-text">
+            A hidden gem in Italy's smallest region: discover what to see in Bard, amid history,
+            nature and an impregnable castle
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 2 months ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../photos/gall 10.jpg " class="card-img-topp" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Hohenzollern bridge and Cologne cathedral.</h5>
+          <p class="card-text">
+            The Cathedral Bridge was a railway and street bridge crossing the river Rhine in
+            the German city of Cologne. visit with us other beautifull places.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 months ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../photos/photographer.jpg" class="card-img-topp" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Arena</h5>
+          <p class="card-text">
+            Come explore with us the different heritage sites contact our
+            travel agency for more information and wonderous adventures.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 1 year ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- a-culture ends -->
+
+  <!-- other cards -->
+  <div class="row row-cols-1 m-3 row-cols-md-2 g-4" id="water">
+    <div class="col">
+      <div class="card">
+        <img src="../photos/gall 5.png" class="card-img-topx" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Naigara falls</h5>
+          <p class="card-text">
+            Niagara Falls is a group of three waterfalls at the southern end of Niagara Gorge, spanning the border
+            between the
+            province of Ontario in Canada . its one of the tallest and has high volumes of water making it really
+            fascinating.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../photos/greece.jpg " class="card-img-topx" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Oia Santorini</h5>
+          <p class="card-text">
+            Santorini’s and one of the Greek islands’ most famous hilltop villages,
+            The popularity of Oia, its location on the cliffs of the Caldera, and its luxury villas create a beautiful
+            scenary.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- endorther -->
+  <!--updates-->
+  <section class="bg-light p-4">
+    <div class="container text-center">
+      <h2 class="mb-3 fw-bold">Want to stay Connected?</h2>
+      <p class="mb-4 fw-light text-muted">
+        If you love our content and want to stay in the loop,
+        Subscribe for the latest blog posts, tips, & travel
+        guides. Let's stay updated!
+      </p>
+      <form>
+        <div class="mb-3">
+          <input type="email" placeholder="Email" required />
+        </div>
+
+        <button type="submit" class="btn btn-dark">Subscribe</button>
+      </form>
+    </div>
+  </section>
+  <!--footer-->
+  <section>
+    <footer>
+      <div class="footer bg-dark">
+        <div class="footer-icons">
+          <div class="p-4">
+            <i class="fa-brands fa-facebook fa-beat-fade fa-lg" style="color: orange"></i>
+            <i class="fa-brands fa-instagram fa-beat-fade fa-lg" style="color: orange"></i>
+            <i class="fa-brands fa-youtube fa-beat-fade fa-lg" style="color: orange"></i>
+            <i class="fa-brands fa-pinterest fa-beat-fade fa-lg" style="color: orange"></i>
+            <i class="fa-brands fa-email fa-beat-fade fa-lg" style="color: orange"></i>
           </div>
-          <hr />
-          <div class="footer-rights">
-            <div class="rights bg-dark">
-              <div class="p-4 text-white">
-                <p><i class="fa-solid fa-copyright"></i>The World Travels</p>
-                <p>
-                  we only recommend products and services that we feel are high
-                  quality and helpful to our readers. Thanks for your support.
-                </p>
-                <p></p>
-                <p></p>
-              </div>
+        </div>
+        <hr />
+        <div class="footer-rights">
+          <div class="rights bg-dark">
+            <div class="p-4 text-white">
+              <p><i class="fa-solid fa-copyright"></i>The World Travels</p>
+              <p>
+                we only recommend products and services that we feel are high
+                quality and helpful to our readers. Thanks for your support.
+              </p>
+              <p>SSUUBI ERIC</p>
+              <p>2025-B291-22458</p>
             </div>
           </div>
         </div>
-      </footer>
-    </section>
-    <script src="../javascript/blog.js"></script>
-  </body>
+      </div>
+    </footer>
+  </section>
+  <script src="../javascript/blog.js"></script>
+
+</body>
 </html>
